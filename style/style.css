@@ -2,6 +2,7 @@
 
 * {   box-sizing: border-box;   margin: 0;   padding: 0; }
 
+/* RENK KODLARI */
 :root {
 
     --Bright-Blue: hsl(220, 98%, 61%);
@@ -25,6 +26,7 @@ body {
 
 }
 
+/* Ana Container */
 .container {
 
     position: absolute;
@@ -38,18 +40,19 @@ body {
 
 .main_section {
 
-
     display: grid;
     grid-template-columns: auto;
     align-content: center;
 
 }
 
+/* Input kutusunun çevresi */
 input {
 
     border: 0;
 
 }
+
 
 .input_area {
 
@@ -60,7 +63,7 @@ input {
     color: #fff;
 
 }
-
+/* Placeholder rengi */
 .input_area::-webkit-input-placeholder {
 
     color: #fff;
@@ -76,7 +79,6 @@ input {
 input:focus {
 
     outline: var(--Very-Dark-Grayish-Blue);
-
 
 }
 
@@ -103,7 +105,6 @@ input:focus {
 #title_span {
 
     color: #fff;
-
     font-size: 56px;
     display: grid;
     grid-template-columns: auto auto;
@@ -116,14 +117,32 @@ input:focus {
 
 }
 
+#add_Button{
+
+    background-color: var(--Very-Dark-Blue);
+    border:1;
+    color:#fff;
+
+}
+
+#theme_Button{
+
+    
+    width: 24px;
+    height: 24px;
+    
+}
+
 .to_do_list {
 
-    background-color: tan;
+ 
 
 }
 
 .info_section {
 
     background-color: teal;
+    display: grid;
+    grid-template-columns: auto auto auto;
 
 }

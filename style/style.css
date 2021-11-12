@@ -59,7 +59,6 @@ input {
     margin:5px;
     height: 35px;
     background-color: var(--Very-Dark-Desaturated-Blue);
-    border-radius: 4px;
     color: #fff;
 
 }
@@ -89,9 +88,24 @@ input:focus {
 }
 
 .input_section {
+    margin-bottom: 20px;
+}
+
+.input_section, .to_do_list>div {
 
     background-color: var(--Very-Dark-Desaturated-Blue);
     border-radius: 5px;
+}
+
+.to_do_list {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.to_do_list> :not(:last-child) {
+    margin: 2px;
+    border-bottom: 1px solid;
+    border-color: var(--Light-Grayish-Blue);
 }
 
 .title_div {
@@ -133,11 +147,6 @@ input:focus {
     
 }
 
-.to_do_list {
-
- 
-
-}
 
 .info_section {
 

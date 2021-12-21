@@ -1,157 +1,156 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
-* {   box-sizing: border-box;   margin: 0;   padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 /* RENK KODLARI */
 :root {
+  --Bright-Blue: hsl(220, 98%, 61%);
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+  --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  --Light-Grayish-Blue: hsl(234, 39%, 85%);
 
-    --Bright-Blue: hsl(220, 98%, 61%);
-    --Very-Dark-Blue: hsl(235, 21%, 11%);
-    --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
-    --Light-Grayish-Blue: hsl(234, 39%, 85%);
-    --Light-Grayish-Blue: hsl(236, 33%, 92%);
-    --Dark-Grayish-Blue: hsl(234, 11%, 52%);
-    --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
-    --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+  --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+}
+
+.theme-light {
+  --Bright-Blue: hsl(220, 98%, 61%);
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+  --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  --Light-Grayish-Blue: hsl(234, 39%, 85%);
+
+  --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+
+  --color-primary: hsl(234, 39%, 85%);
+  --input-color: --Very-Dark-Grayish-Blue;
+}
+
+.theme-dark {
+  --Bright-Blue: hsl(220, 98%, 61%);
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+  --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  --Light-Grayish-Blue: hsl(234, 39%, 85%);
+
+  --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+
+  --color-primary: hsl(235, 21%, 11%);
+  --input-color: --Very-Dark-Desaturated-Blue;
 }
 
 body {
-
-    width: 100%;
-    font-size: x-large;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 400 700;
-    background-color: var(--Very-Dark-Blue);
-
+  width: 100%;
+  font-size: x-large;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400 700;
+  background-color: var(--color-primary);
 }
 
 /* Ana Container */
 .container {
-
-    position: absolute;
-    top: 30%;
-    left: 37%;
-    margin-top: -50px;
-    margin-left: -50px;
-    width: 40%;
-
+  position: absolute;
+  top: 30%;
+  left: 37%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 40%;
 }
 
 .main_section {
-
-    display: grid;
-    grid-template-columns: auto;
-    align-content: center;
-
+  display: grid;
+  grid-template-columns: auto;
+  align-content: center;
 }
 
 /* Input kutusunun çevresi */
 input {
-
-    border: 0;
-
+  border: 0;
 }
 
-
 .input_area {
-
-    margin:5px;
-    height: 35px;
-    background-color: var(--Very-Dark-Desaturated-Blue);
-    color: #fff;
-
+  margin: 5px;
+  height: 35px;
+  background-color: var(--input-color);
+  color: #fff;
 }
 /* Placeholder rengi */
 .input_area::-webkit-input-placeholder {
-
-    color: #fff;
-
+  color: #fff;
 }
 
 .input_area::-webkit-input-cursor {
-
-    padding: 55px;
-
+  padding: 55px;
 }
 
 input:focus {
-
-    outline: var(--Very-Dark-Grayish-Blue);
-
+  outline: var(--Very-Dark-Grayish-Blue);
 }
 
 #input_icons {
-
-    position: absolute;
-
+  position: absolute;
 }
 
 .input_section {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-.input_section, .to_do_list>div {
-
-    background-color: var(--Very-Dark-Desaturated-Blue);
-    border-radius: 5px;
+.input_section,
+.to_do_list > div {
+  background-color: var(--Very-Dark-Desaturated-Blue);
+  border-radius: 5px;
 }
 
 .to_do_list {
-    display: grid;
-    grid-template-columns: auto;
+  display: grid;
+  grid-template-columns: auto;
 }
 
-.to_do_list> :not(:last-child) {
-    margin: 2px;
-    border-bottom: 1px solid;
-    border-color: var(--Light-Grayish-Blue);
+.to_do_list > :not(:last-child) {
+  margin: 2px;
+  border-bottom: 1px solid;
+  border-color: var(--Light-Grayish-Blue);
 }
 
 .title_div {
-
-    display: grid;
-    grid-template-columns: auto;
-    margin-right: 0;
-
+  display: grid;
+  grid-template-columns: auto;
+  margin-right: 0;
 }
 
 #title_span {
-
-    color: #fff;
-    font-size: 56px;
-    display: grid;
-    grid-template-columns: auto auto;
-
+  color: #fff;
+  font-size: 56px;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 .theme {
-
-    display: inline;
-
+  display: inline;
 }
 
-#add_Button{
-
-    background-color: var(--Very-Dark-Blue);
-    border:1;
-    color:#fff;
-
+#add_Button {
+  background-color: var(--Very-Dark-Blue);
+  border: 1;
+  color: #fff;
 }
 
-#theme_Button{
-
-    
-    width: 24px;
-    height: 24px;
-    
+#theme_Button {
+  width: 24px;
+  height: 24px;
 }
-
 
 .info_section {
+  background-color: teal;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
 
-    background-color: teal;
-    display: grid;
-    grid-template-columns: auto auto auto;
-
+.light_mode {
+  background-color: white;
 }

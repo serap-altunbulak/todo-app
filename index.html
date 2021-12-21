@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="style/button.css">
 
   <link href='https://css.gg/sun.css' rel='stylesheet'>
-
+  <!-- Latest compiled and minified CSS -->
 </head>
 
 <body>
@@ -27,7 +27,7 @@
         <!-- <button id="theme_Button"><i style="left:56%"class="gg-sun theme"></i></button> -->
         <div id="title_span"> TODO </i>
           <div class="flipswitch">
-            <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" checked>
+            <input type="checkbox" onchange="toggleTheme()" name="flipswitch" class="flipswitch-cb" id="fs" >
             <label class="flipswitch-label" for="fs">
               <div class="flipswitch-inner"></div>
             </label>
@@ -39,7 +39,7 @@
       <div class="input_section">
         <div class="input-icons">
 
-          <input id="radio-button" type="radio" onfocus="check_uncheck()">
+          <input id="radio-button" type="checkbox" onfocus="check_uncheck()">
           <input class="input_area" id="input_area" type="text" placeholder="Currently Typing...">
 
         </div>
@@ -63,7 +63,8 @@
   </div>
 
 
-  <script src="script.js"></script>
+  <script src="script/script.js"></script>
+
 </body>
 
 </html>

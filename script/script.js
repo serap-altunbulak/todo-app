@@ -8,6 +8,7 @@ input.addEventListener("keyup", function (event) {
 
     var cln = itm[0].cloneNode(true);
     cln.checked = false;
+    cln.innerHTML += "<button class='del-button'>DEL</button>"
     document.getElementsByClassName("to_do_list")[0].prepend(cln);
   }
 });

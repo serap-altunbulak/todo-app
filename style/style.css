@@ -27,7 +27,10 @@
   --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
 
   --color-primary: hsl(234, 39%, 85%);
-  --input-color: --Very-Dark-Grayish-Blue;
+  --input-color: var(--Very-Dark-Grayish-Blue);
+
+  --bg-img: url(images/bg-desktop-light.jpg);
+  --bg-mobile-img: url(images/bg-mobile-light.jpg);
 }
 
 .theme-dark {
@@ -40,7 +43,10 @@
   --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
 
   --color-primary: hsl(235, 21%, 11%);
-  --input-color: --Very-Dark-Desaturated-Blue;
+  --input-color: var(--Very-Dark-Desaturated-Blue);
+
+  --bg-img: url(images/bg-desktop-dark.jpg);
+  --bg-mobile-img: url(images/bg-mobile-dark.jpg);
 }
 
 body {
@@ -67,6 +73,7 @@ body {
   grid-template-columns: auto;
   align-content: center;
 }
+
 
 /* Input kutusunun çevresi */
 input {
@@ -151,6 +158,64 @@ input:focus {
   grid-template-columns: auto auto auto;
 }
 
-.light_mode {
+/* Delete Button */
+div.input-icons {
+  position: relative;
+}
+
+button.del-button {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  color: transparent;
+  cursor: pointer;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  right: 1%;
+  letter-spacing: 1px;
+  line-height: 30px;
+  outline: none;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in;
+  width: 40px;
+}
+
+button.del-button::before,
+button.del-button::after {
   background-color: white;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transform-origin: center left;
+  transition: all 0.2s ease-in;
+  width: 40px;
+  z-index: -1;
+}
+
+button.del-button::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+button.del-button::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+button.del-button:hover {
+  color: var(--Dark-Grayish-Blue);
+}
+
+button.del-button:hover::before,
+button.del-button:hover::after {
+  height: 50px;
+  transform: rotate(0deg);
 }
